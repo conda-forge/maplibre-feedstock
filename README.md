@@ -145,5 +145,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@crazycapivara](https://github.com/crazycapivara/)
 * [@giswqs](https://github.com/giswqs/)
 
