@@ -1,5 +1,5 @@
 {% set name = "maplibre" %}
-{% set version = "0.2.8" %}
+{% set version = "0.3.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/maplibre-{{ version }}.tar.gz
-  sha256: 6e6e76a2fec5b845d0954a892922a6cf9932224150e0a5fc293a9af808205dca
+  sha256: 3c1b6bfa740a035f32682e7ef9a54172a019770a3e1317eea6f3e66b8cf0b1a7
 
 build:
   noarch: python
@@ -22,16 +22,16 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0
-    - shiny >=0.7.0
-    - htmltools >=0.5.1
+    # - shiny >=0.7.0
+    # - htmltools >=0.5.1
     - jinja2 >=3.1.3
     - pydantic >=2.5.3
     - anywidget >=0.9.0
     - branca
-    - questionary
+    # - questionary
   run_constrained:
-    - pandas >=2.1.4,<3.0.0
-    - geopandas >=0.14.2,<0.15.0
+    - pandas >=2.1.4
+    - geopandas >=0.14.2
 
 test:
   imports:
