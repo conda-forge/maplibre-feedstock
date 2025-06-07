@@ -1,5 +1,5 @@
 {% set name = "maplibre" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/maplibre-{{ version }}.tar.gz
-  sha256: 9c80e818e96f37dee0bfcdc0bced0307758ca6090dbe7748e1133d07edfe0095
+  sha256: 0be6a40c1a89cd9a7608b829db53f055a07e30f37b7ba813d488ab905674a7b6
 
 build:
   noarch: python
